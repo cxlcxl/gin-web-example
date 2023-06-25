@@ -8,3 +8,4 @@
 3. gorm mysql
 4. redis 数据库缓存
 5. config 配置获取
+6. air 热更新
