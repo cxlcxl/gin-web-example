@@ -9,3 +9,20 @@
 4. redis 数据库缓存
 5. config 配置获取
 6. air 热更新
+
+### 使用
+
+下载项目源码
+```perl
+git clone https://github.com/cxlcxl/gin-web-example.git
+```
+
+进入项目目录
+```perl
+// 初始化模块
+go mod init xxxx
+// 下载依赖
+go mod tidy
+// 启动（windows），mac 或其他操作系统需要修改 .air.conf 配置文件
+air
+```
