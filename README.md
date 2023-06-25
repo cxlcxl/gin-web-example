@@ -18,11 +18,19 @@ git clone https://github.com/cxlcxl/gin-web-example.git
 ```
 
 进入项目目录
+
+
+初始化模块
 ```perl
-// 初始化模块
 go mod init xxxx
-// 下载依赖
+```
+
+下载依赖
+```perl
 go mod tidy
-// 启动（windows），mac 或其他操作系统需要修改 .air.conf 配置文件
+```
+
+启动（windows），mac 或其他操作系统需要修改 .air.conf 配置文件
+```perl
 air
 ```
