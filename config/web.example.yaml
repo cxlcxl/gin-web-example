@@ -1,0 +1,41 @@
+Debug: true
+AppName:
+HttpServer:
+  Port: ":8888"
+  AllowCrossDomain: true
+
+Token:
+  Sign: "silent_cxl_example"
+  ExpiresAt: 259200
+
+Mysql:
+  Host: "127.0.0.1"
+  Port: 3306
+  Database: "silent_cxl_example"
+  Prefix: ""
+  Username: "root"
+  Password: "root"
+  Charset: "utf8mb4"
+  SetMaxIdleConns: 10
+  SetMaxOpenConns: 128
+  SetConnMaxLifetime: 60
+  ReadWrite: 0 # 1开启，0关闭
+  SlowQuery: 2 # 慢 SQL
+
+Redis:
+  Host: "127.0.0.1:6379"
+  Password: ""
+  Db: 0
+  KeyPrefix: "silent_cxl_example:"
+  ExpireTime: 3600
+
+Logs:
+  LogDir: "./storage/logs"
+  LogName: "crawl"
+  MaxBackups: 15
+  Compress: false
+
+FileUploadSetting:
+  Size: 150 # kb
+  UploadPath: "/storage/upload"
+  ReturnPath: "/web/storage/upload"
